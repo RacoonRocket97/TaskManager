@@ -1,0 +1,95 @@
+.statistics-container {
+    width: 90vw; 
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f9fafb;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .statistics-container h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stat-card {
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .stat-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #4a5568;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .stat-card.total {
+    background-color: #ebf8ff;
+    color: #3498db;
+  }
+  
+  .stat-card.pending {
+    background-color: #fffbeb;
+    color: #f39c12;
+  }
+  
+  .stat-card.completed {
+    background-color: #f0fff4;
+    color: #2ecc71;
+  }
+  
+  .stat-card.percentage {
+    background-color: #f7fafc;
+    color: #6b46c1;
+  }
+  
+  .progress-container {
+    margin-top: 2rem;
+  }
+  
+  .progress-bar {
+    height: 1.5rem;
+    background-color: #edf2f7;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background-color: #6b46c1;
+    transition: width 0.3s ease;
+  }
+  
+  .progress-text {
+    text-align: center;
+    font-weight: 500;
+    color: #4a5568;
+  }
+  
+  @media (max-width: 768px) {
+    .stats-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+  }

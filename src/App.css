@@ -1,0 +1,55 @@
+/* App.css - Main application styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+    width: 100vw;  /* Делает ширину 100% от экрана */
+
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100vw;  /* Делает ширину 100% от экрана */
+
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: white;
+    width: 100vw;
+  }
+  
+  /* Common Button Styles */
+  button {
+    cursor: pointer;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .main-content {
+      padding: 1rem;
+    }
+  }
