@@ -8,12 +8,19 @@ import CompletedTasks from './components/CompletedTasks';
 import Statistics from './components/Statistics';
 import './App.css';
 import './styles/Navigation.css';
+import { generateDummyTasks } from './utils/testData';
+
 
 function App() {
   const [tasks, setTasks] = useState(() => {
     const savedTasks = localStorage.getItem('tasks');
-    return savedTasks ? JSON.parse(savedTasks) : [];
+    if (savedTasks) {
+      return JSON.parse(savedTasks);
+    } else {
+      return generateDummyTasks(1000); 
+    }
   });
+ 
 
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
